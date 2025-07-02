@@ -68,10 +68,42 @@ A página HTML personalizada foi exibida corretamente no navegador, confirmando 
 
  index.html
 
-✨ Autor:
+🔒 Paso 4: Configurar Permisos:
 
-Feito por Heidys Zuniga 💙
+sudo chown www-data:www-data /var/www/html/index.html
+sudo chmod 644 /var/www/html/index.html
 
-LinkedIn | GitHub
+Explicación:
+
+    www-data é o usuário padrão que o Apache utiliza.
+
+    644 dá permissões de leitura para todos e escrita apenas ao dono do arquivo.
+
+🌐 Paso 5: Acceder al Sitio:
+
+🔍 Localmente:
+
+Abra seu navegador e vá para:
+
+http://127.0.0.1
+
+🌍 Opcional: Acesso remoto:
+
+ Caso queira testar de outro dispositivo (mesma rede):
+
+ 1.Descubra seu IP local
+  hostname -I
+  http://<SEU_IP_LOCAL>
+⚠️ Acesso pela internet não é recomendado sem configuração de segurança.
+
+🧠 Conclusão:
+ Este exercício é ideal para quem está aprendendo sobre servidores, DevOps ou Linux. Ele demonstra como iniciar um servidor Apache e servir páginas estáticas localmente com segurança.
+
+
+
+🛠️ Autora
+Heidys Zuniga – Estudante de tecnologia apaixonada por aprendizado contínuo. 💻✨
+
+
 
 
